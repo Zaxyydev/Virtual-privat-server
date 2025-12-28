@@ -5,32 +5,39 @@
   font-family: "Segoe UI", sans-serif;
 }
 
+/* ===== GLOBAL ===== */
 body {
-  background: linear-gradient(180deg, #0f4c81, #0b1c2d);
-  color: white;
+  background: #f5f7fb;
+  color: #1f2937;
 }
 
+/* ===== NAVBAR ===== */
 .navbar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 20px 40px;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
 .logo {
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: 700;
 }
 .logo span {
-  color: #00d4ff;
+  color: #2563eb;
 }
 
+/* ===== HERO ===== */
 .hero {
+  background: white;
   text-align: center;
-  padding: 80px 20px;
+  padding: 90px 20px;
 }
 
 .hero h1 {
-  font-size: 2.8rem;
+  font-size: 3rem;
   margin-bottom: 20px;
 }
 
@@ -41,90 +48,132 @@ body {
 
 .features li {
   margin: 8px 0;
+  font-size: 1.05rem;
 }
 
 .btn {
-  background: #0d6efd;
-  padding: 15px 40px;
+  background: #2563eb;
+  padding: 14px 36px;
   border-radius: 30px;
   color: white;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
+  display: inline-block;
 }
 
+/* ===== PRICING ===== */
 .pricing {
-  background: #f5f7fb;
-  color: #111;
-  padding: 60px 20px;
+  padding: 70px 20px;
   text-align: center;
 }
 
+.pricing h2 {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+}
+
 .cards {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ===== CARD ===== */
+.card {
+  background: white;
+  padding: 32px;
+  border-radius: 18px;
+  width: 270px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+.card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.card p {
+  margin: 6px 0;
+  color: #4b5563;
+}
+
+.card h4 {
+  margin: 16px 0;
+  font-size: 1.2rem;
+  color: #111827;
+}
+
+.card button {
+  background: #2563eb;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  color: white;
+  font-weight: 600;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+/* ===== BEST SELLER ===== */
+.best {
+  border: 2px solid #2563eb;
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  top: -12px;
+  right: 20px;
+  background: #2563eb;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+}
+
+/* ===== WHY ===== */
+.why {
+  padding: 70px 20px;
+  text-align: center;
+  background: white;
+}
+
+.why h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.why-box {
   display: flex;
   gap: 25px;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.card {
-  background: white;
-  padding: 30px;
-  border-radius: 20px;
-  width: 260px;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
-}
-
-.card h4 {
-  margin: 15px 0;
-}
-
-.card button {
-  background: #28a745;
-  border: none;
-  padding: 12px;
-  width: 100%;
-  color: white;
-  font-weight: bold;
-  border-radius: 25px;
-}
-
-.best {
-  border: 3px solid #ffb703;
-}
-
-.badge {
-  background: #ffb703;
-  padding: 5px 12px;
-  border-radius: 20px;
-  font-size: 0.8rem;
-}
-
-.why {
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.why-box {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
 .why-box div {
-  background: rgba(255,255,255,0.1);
-  padding: 20px;
-  border-radius: 15px;
-  width: 180px;
+  background: #f5f7fb;
+  padding: 22px;
+  border-radius: 16px;
+  width: 200px;
+  font-weight: 500;
 }
 
+/* ===== FOOTER ===== */
 footer {
   text-align: center;
   padding: 20px;
-  opacity: 0.7;
+  color: #6b7280;
+  background: #f5f7fb;
 }
 
-/* MODAL */
+/* ===== MODAL ===== */
 .modal {
   position: fixed;
   inset: 0;
@@ -136,11 +185,11 @@ footer {
 
 .modal-box {
   background: white;
-  color: black;
-  padding: 25px;
-  border-radius: 20px;
+  color: #111;
+  padding: 28px;
+  border-radius: 18px;
   width: 90%;
-  max-width: 400px;
+  max-width: 420px;
 }
 
 .modal-box input,
@@ -148,20 +197,26 @@ footer {
   width: 100%;
   padding: 12px;
   margin: 8px 0;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
 }
 
 .action {
   display: flex;
   gap: 10px;
+  margin-top: 10px;
 }
 
 .action button {
   flex: 1;
   padding: 12px;
   border: none;
-  border-radius: 20px;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 .cancel {
-  background: #aaa;
+  background: #9ca3af;
+  color: white;
 }
