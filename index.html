@@ -14,21 +14,22 @@
 </header>
 
 <section class="hero">
-  <h1>Cloud VPS Cepat & Stabil</h1>
-  <ul class="features">
-    <li>✔ High Performance CPU</li>
-    <li>✔ SSD NVMe & Anti DDoS</li>
-    <li>✔ Setup Cepat 5–10 Menit</li>
-  </ul>
-  <a href="#paket" class="btn">Lihat Paket</a>
+  <div class="hero-box">
+    <h1>Cloud VPS Cepat & Stabil</h1>
+    <p class="subtitle">Performa tinggi, SSD NVMe, uptime 99.9%</p>
+    <ul class="features">
+      <li>✔ High Performance CPU</li>
+      <li>✔ SSD NVMe & Anti DDoS</li>
+      <li>✔ Setup Cepat 5–10 Menit</li>
+    </ul>
+    <a href="#paket" class="btn">Lihat Paket</a>
+  </div>
 </section>
 
 <section id="paket" class="pricing">
   <h2>Paket VPS</h2>
 
   <div class="cards">
-
-    <!-- R4 C2 -->
     <div class="card">
       <h3>RAM 4GB</h3>
       <p>2 Core CPU</p>
@@ -37,7 +38,6 @@
       <button onclick="buka('R4 C2')">ORDER</button>
     </div>
 
-    <!-- R8 C2 -->
     <div class="card">
       <h3>RAM 8GB</h3>
       <p>2 Core CPU</p>
@@ -46,7 +46,6 @@
       <button onclick="buka('R8 C2')">ORDER</button>
     </div>
 
-    <!-- R8 C4 -->
     <div class="card best">
       <span class="badge">Best Seller</span>
       <h3>RAM 8GB</h3>
@@ -56,7 +55,6 @@
       <button onclick="buka('R8 C4')">ORDER</button>
     </div>
 
-    <!-- R16 C2 -->
     <div class="card">
       <h3>RAM 16GB</h3>
       <p>2 Core CPU</p>
@@ -65,7 +63,6 @@
       <button onclick="buka('R16 C2')">ORDER</button>
     </div>
 
-    <!-- R16 C4 -->
     <div class="card">
       <h3>RAM 16GB</h3>
       <p>4 Core CPU</p>
@@ -73,7 +70,6 @@
       <h4>Rp 30.000 / bulan</h4>
       <button onclick="buka('R16 C4')">ORDER</button>
     </div>
-
   </div>
 </section>
 
@@ -95,8 +91,7 @@
 <div id="modal" class="modal">
   <div class="modal-box">
     <h3>Form Order VPS</h3>
-
-    <input id="req" placeholder="FREE REQ (opsional)">
+    <input id="req" placeholder="FREE REQ (User)">
     <select id="os">
       <option value="">VERSI OS</option>
       <option>Ubuntu 20.04</option>
@@ -104,17 +99,15 @@
       <option>Debian 11</option>
       <option>Debian 12</option>
     </select>
-
     <input id="region" placeholder="REGION (SG / ID / US)">
     <input id="subdomain" placeholder="SUBDOMAIN">
-
     <select id="protect">
       <option>PROTECT : ON</option>
       <option>PROTECT : OFF</option>
     </select>
 
     <div class="action">
-      <button onclick="kirimWA()">KIRIM</button>
+      <button onclick="kirimTG()">KIRIM</button>
       <button class="cancel" onclick="tutup()">BATAL</button>
     </div>
   </div>
