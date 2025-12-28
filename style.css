@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: linear-gradient(180deg, #0f4c81, #0b1c2d);
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.logo span {
+  color: #00d4ff;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+}
+
+.features {
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.features li {
+  margin: 8px 0;
+}
+
+.btn {
+  background: #0d6efd;
+  padding: 15px 40px;
+  border-radius: 30px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.pricing {
+  background: #f5f7fb;
+  color: #111;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  width: 260px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.card h4 {
+  margin: 15px 0;
+}
+
+.card button {
+  background: #28a745;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  color: white;
+  font-weight: bold;
+  border-radius: 25px;
+}
+
+.best {
+  border: 3px solid #ffb703;
+}
+
+.badge {
+  background: #ffb703;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+}
+
+.why {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.why-box {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.why-box div {
+  background: rgba(255,255,255,0.1);
+  padding: 20px;
+  border-radius: 15px;
+  width: 180px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  opacity: 0.7;
+}
+
+/* MODAL */
+.modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-box {
+  background: white;
+  color: black;
+  padding: 25px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 400px;
+}
+
+.modal-box input,
+.modal-box select {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+}
+
+.action {
+  display: flex;
+  gap: 10px;
+}
+
+.action button {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 20px;
+}
+
+.cancel {
+  background: #aaa;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Kazumii Cloud VPS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">Kazumii<span>Cloud</span></div>
+  <nav>Paket VPS</nav>
+</header>
+
+<section class="hero">
+  <h1>Cloud VPS Cepat & Stabil</h1>
+  <ul class="features">
+    <li>✔ High Performance CPU</li>
+    <li>✔ SSD NVMe & Anti DDoS</li>
+    <li>✔ Setup Cepat 5–10 Menit</li>
+  </ul>
+  <a href="#paket" class="btn">Lihat Paket</a>
+</section>
+
+<section id="paket" class="pricing">
+  <h2>Paket VPS</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>RAM 4GB</h3>
+      <p>2 Core CPU</p>
+      <p>80GB SSD NVMe</p>
+      <h4>Rp 10.000 / bulan</h4>
+      <button onclick="buka('RAM 4GB')">ORDER</button>
+    </div>
+
+    <div class="card best">
+      <span class="badge">Best Seller</span>
+      <h3>RAM 16GB</h3>
+      <p>2 Core CPU</p>
+      <p>200GB SSD NVMe</p>
+      <h4>Rp 25.000 / bulan</h4>
+      <button onclick="buka('RAM 16GB')">ORDER</button>
+    </div>
+
+    <div class="card">
+      <h3>RAM 8GB</h3>
+      <p>2 Core CPU</p>
+      <p>120GB SSD NVMe</p>
+      <h4>Rp 15.000 / bulan</h4>
+      <button onclick="buka('RAM 8v1GB')">ORDER</button>
+    </div>
+  </div>
+</section>
+
+<div class="card">
+      <h3>RAM 8GB</h3>
+      <p>4 Core CPU</p>
+      <p>160GB SSD NVMe</p>
+      <h4>Rp 20.000 / bulan</h4>
+      <button onclick="buka('RAM 8v2GB')">ORDER</button>
+    </div>
+  </div>
+</section>
+
+<div class="card">
+      <h3>RAM 16GB</h3>
+      <p>4 Core CPU</p>
+      <p>240-300GB SSD NVMe</p>
+      <h4>Rp 30.000 / bulan</h4>
+      <button onclick="buka('RAM 16v2GB')">ORDER</button>
+    </div>
+  </div>
+</section>
+
+<section class="why">
+  <h2>Kenapa Pilih Kami?</h2>
+  <div class="why-box">
+    <div>⚡ High Performance</div>
+    <div>🛡 Anti DDoS</div>
+    <div>⏱ Aktif 24 Jam</div>
+    <div>🎧 Support Ramah</div>
+  </div>
+</section>
+
+<footer>
+  © 2025 ZYY Cloud VPS • Uptime 99.9%
+</footer>
+
+<!-- MODAL -->
+<div id="modal" class="modal">
+  <div class="modal-box">
+    <h3>Form Order VPS</h3>
+
+    <input id="req" placeholder="FREE REQ (opsional)">
+    <select id="os">
+      <option value="">VERSI OS</option>
+      <option>Ubuntu 20.04</option>
+      <option>Ubuntu 22.04</option>
+      <option>Debian 11</option>
+      <option>Debian 12</option>
+    </select>
+
+    <input id="region" placeholder="REGION (SG / ID / US)">
+    <input id="subdomain" placeholder="SUBDOMAIN">
+
+    <select id="protect">
+      <option>PROTECT : ON</option>
+      <option>PROTECT : OFF</option>
+    </select>
+
+    <div class="action">
+      <button onclick="kirimWA()">KIRIM</button>
+      <button class="cancel" onclick="tutup()">BATAL</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
